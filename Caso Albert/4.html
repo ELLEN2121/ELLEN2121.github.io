@@ -1,0 +1,70 @@
+<html>
+    <head>  
+        <meta charset="utf-8">
+        <title>Caso Albert</title>
+    </head>
+    <body>
+    
+            <button type="button" onclick="verifica();">CONFIRMAR</button>
+            <input></input>
+        
+        
+    </body>
+
+<style>
+    body{
+
+        background-size: 100%;
+        background-image: url(https://i.pinimg.com/originals/dc/3b/f9/dc3bf902669ad8b5c40cc0c3fd2e0a27.jpg);
+        color: rgb(255, 255, 255);
+
+        
+    }
+    input{
+
+        width: 33%;
+        height: 5%;
+        position:absolute;
+		left:60%;
+		top:45%;
+		margin-left:-110px;
+		margin-top:-40px;
+        background-color:rgb(8, 42, 11);
+
+    }
+    button{
+        
+        width: 15%;
+        height: 5%;
+        position:absolute;
+		left:68%;
+		top:55%;
+        margin-left:-110px;
+		margin-top:-40px;
+        border-radius: 50%;
+        background-color: rgb(0, 0, 0);
+        color:green;
+    }
+</style>
+<script>
+    
+    var numero=document.querySelector("input");
+    numero.focus();
+    function verifica() {
+
+        if(numero.value==2530){
+            
+            window.location.href="correto.html"
+
+        } else {
+
+            window.location.href="incorreto.html"
+
+        }
+    }
+    var click= document.querySelector("button");
+    click.onclick= verifica; 
+    
+
+    
+</script>
